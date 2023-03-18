@@ -1,9 +1,9 @@
 .Weather {
+  margin: 5rem auto;
   font-family: arial, sans-serif;
   color: #878787;
   border: 1px solid #dadde1;
   max-width: 600px;
-  margin: 5rem auto;
   padding: 20px 10px;
   border-radius: 5px;
 }
@@ -48,4 +48,8 @@
   position: relative;
   top: -24px;
   font-weight: 400;
+}
+
+.desc{
+  text-transform: capitalize;
 }
