@@ -31,25 +31,33 @@
   font-size: 16px;
 }
 
-.Weather img {
+.Weather canvas {
   position: relative;
-  top: -10px;
-  margin-right: 10px;
+  top: 10px;
 }
 
 .temperature {
   font-size: 3rem;
   color: #000;
-  line-height: 84px;
+  margin-left: 10px;
 }
 
 .unit {
   color: #222;
   position: relative;
   top: -24px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
-.desc{
+.unit a {
+  color: #222;
+  text-decoration: none;
+}
+
+.unit a:hover {
+  color: #adf4f4;
+}
+
+.desc {
   text-transform: capitalize;
 }
