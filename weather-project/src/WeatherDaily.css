@@ -1,0 +1,16 @@
+.weather-forecast {
+  text-align: center;
+}
+
+.weather-forecast-temp{
+    margin-top: 8px;
+}
+
+.weather-forecast-day{
+    font-weight: 600; 
+}
+
+.weather-forecast-min {
+  opacity: 0.6;
+  margin-left: 5px;
+}
