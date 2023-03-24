@@ -23,12 +23,12 @@ export default function WeatherForecast(props) {
             <div className="row">
                 {forecast.map((forecastDaily, index)=>{
                     if(index < 7){
-                        return (
+                       return (
                         <div className="col" key={index}>
                              <WeatherDailyForecast data={forecastDaily} />
-                         </div> 
+                             </div> 
                          );
-                      }
+                    }else { return null }
                 })}
             </div>
         </div>
