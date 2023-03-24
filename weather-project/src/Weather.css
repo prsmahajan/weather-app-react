@@ -3,7 +3,7 @@ body {
 }
 
 .Weather {
-  margin: 5rem auto;
+  margin: 5rem auto 1rem;
   font-family: arial, sans-serif;
   color: #2b2222;
   border: 4px solid #dadde1;

@@ -8,6 +8,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Weather defaultCity='Amritsar'/>
+    <div className='footer'>This application was made by
+    <a href='https://linkedin.com/in/prsmahajan' target='_blank' rel='noopener noreferrer'> Paras </a> 
+    with ❤️<br/>You can check this repo at <a href='https://github.com/prsmahajan/weather-app-react' className='github'>Github</a></div>
   </React.StrictMode>
 );
 

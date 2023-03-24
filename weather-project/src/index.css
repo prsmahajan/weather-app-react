@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.footer {
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  margin-top: 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ff3030;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer .github {
+  color: #81ffb3;
+}
