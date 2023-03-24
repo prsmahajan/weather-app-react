@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './WeatherDaily.css'
 import axios from 'axios';
 import WeatherDailyForecast from './WeatherForecastConvert'
@@ -11,13 +11,25 @@ export default function WeatherForecast(props) {
         setLoaded(true)
     }
 
+    useEffect(function(){
+        setLoaded(false);
+    }, [props.coordinates]);
+
     if(loaded){
+        console.log(props.coordinates)
+        console.log(forecast)
         return ( 
         <div className='weather-forecast'>
             <div className="row">
-                <div className="col">
-                   <WeatherDailyForecast data={forecast[0]} />
-                </div> 
+                {forecast.map((forecastDaily, index)=>{
+                    if(index < 7){
+                        return (
+                        <div className="col" key={index}>
+                             <WeatherDailyForecast data={forecastDaily} />
+                         </div> 
+                         );
+                      }
+                })}
             </div>
         </div>
         )
