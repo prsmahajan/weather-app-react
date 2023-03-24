@@ -2,10 +2,12 @@
   margin: 5rem auto;
   font-family: arial, sans-serif;
   color: #878787;
-  border: 1px solid #dadde1;
+  border: 4px solid #dadde1;
   max-width: 600px;
   padding: 20px 10px;
   border-radius: 5px;
+  background: #fff;
+  text-shadow: 0 0 1px #444;
 }
 
 .Weather form {
@@ -33,7 +35,7 @@
 
 .Weather canvas {
   position: relative;
-  top: 10px;
+  top: 12px;
 }
 
 .temperature {
